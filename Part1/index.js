@@ -1,14 +1,13 @@
 // console.log('Hello World')
 
 const boxes = document.querySelectorAll(".box");
+const playerSpan = document.getElementById('player');
 
 let board = [null, null, null, null, null, null,null,null,null];
 
 function play(clickedId) {
-  const playerSpan = document.getElementById('player');
+
   const clickedElement = document.getElementById(clickedId);
-
-
   if(playerSpan.innerText === 'X') {
     playerSpan.innerText = 'O';
     clickedElement.innerText = 'X';
